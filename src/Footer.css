@@ -1,0 +1,13 @@
+/* Footer.css */
+
+/* Style for the footer container */
+.footer {
+    background-color: #333; /* Choose your preferred background color */
+    color: #fff; /* Text color for the footer */
+    padding: 20px 0; /* Adjust the padding as needed */
+    text-align: center; /* Center-align text within the footer */
+    position: fixed; /* Position the footer */
+    bottom: 0; /* Stick it to the bottom of the viewport */
+    width: 100%; /* Full width of the viewport */
+  }
+  
