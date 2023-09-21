@@ -97,3 +97,13 @@
 .slick-dots button:hover {
   background-color: #6b879b;
 }
+
+/* Banner Styles */
+.banner {
+  background-image: url("./assets/banImg.png"); /* Replace with your banner image URL */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 250px 0; /* Adjust the padding as needed */
+}

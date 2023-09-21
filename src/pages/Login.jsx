@@ -92,11 +92,12 @@ const login = () => {
         </h1>
       </div>
       <div className="w-full flex justify-center pt-8">
-        {student && <h1> Login as Student </h1>}
-        {organisation && <h1> Login as Organisation </h1>}
-        {mentor && <h1> Login as Mentor </h1>}
-        {university && <h1> Login as University </h1>}
+        {student && <h1 style={{ fontSize: '1.5rem' }}>Login as Student</h1>}
+        {organisation && <h1 style={{ fontSize: '1.5rem' }}>Login as Organisation</h1>}
+        {mentor && <h1 style={{ fontSize: '1.5rem' }}>Login as Mentor</h1>}
+        {university && <h1 style={{ fontSize: '1.5rem' }}>Login as University</h1>}
       </div>
+
       {student && <StudentLogin />}
       {mentor && <MentorLogin />}
       {organisation && <OrganisationLogin />}
@@ -107,8 +108,8 @@ const login = () => {
 
 export default login;
 
-
-{/* <Formik
+/*
+{ <Formik
         onSubmit={handleFormSubmit}
         initialValues={initialValues}
         validationSchema={userSchema}
@@ -229,4 +230,4 @@ export default login;
             </div>
           </form>
         )}
-      </Formik> */}
+      </Formik> }*/

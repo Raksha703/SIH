@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+/*import { Link } from "react-router-dom";
 
 const TopBar = ({pageName, login, home, logout, register}) => {
   return (
@@ -13,3 +13,38 @@ const TopBar = ({pageName, login, home, logout, register}) => {
 }
 
 export default TopBar
+*/
+
+import { Link } from "react-router-dom";
+
+const TopBar = ({ pageName, login, home, logout, register }) => {
+  return (
+    <div className="w-full h-16 bg-[#96b6c5] relative py-3 px-5 flex items-center justify-between">
+      <h1 className="font-bold text-lg text-white">{pageName}</h1>
+      <div className="space-x-4 flex">
+        {home && (
+          <Link to="/" className="btn bg-[#adc4ce] hover:bg-[#6b879b]">
+            Home
+          </Link>
+        )}
+        {login && (
+          <Link to="/login" className="btn bg-[#adc4ce] hover:bg-[#6b879b]">
+            Login
+          </Link>
+        )}
+        {logout && (
+          <Link to="/" className="btn bg-[#adc4ce] hover:bg-[#6b879b]">
+            Logout
+          </Link>
+        )}
+        {register && (
+          <Link to="/register" className="btn bg-[#adc4ce] hover:bg-[#6b879b]">
+            Register
+          </Link>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default TopBar;

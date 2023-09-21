@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "../components/Footer";
 import "../Footer.css";
+import "../Home.css";
 
 const Home = () => {
   const { auth } = useAuth();
@@ -38,6 +39,8 @@ const Home = () => {
   return (
     <>
       <TopBar pageName="Home" register={true} login={!auth.organistion} logout={auth.organistion} />
+      <div className="banner">
+      </div>
       <div className="flex">
         <div className="flex-col justify-center w-full">
           <div className="flex mt-2">
@@ -59,13 +62,17 @@ const Home = () => {
                 <h1 className="m-1"><b>Filter</b></h1>
               </Link>
             </div>
+            <div>
             <Link to="/help" className="flex m-3 p-2 rounded-md drop-shadow-lg bg-[#adc4ce]">
               <HelpIcon sx={{ fontSize: "30px" }} />
               <h1 className="m-1"><b>FAQ</b></h1>
             </Link>
+            </div>
+            <div>
             <div className="flex m-3 p-2 rounded-md drop-shadow-lg bg-[#adc4ce]">
               <InfoIcon sx={{ fontSize: "30px" }} />
               <h1 className="m-1"><b>Info</b></h1>
+            </div>
             </div>
           </div>
 
